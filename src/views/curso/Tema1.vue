@@ -1,162 +1,64 @@
 <template lang="pug">
 .curso-main-container.pb-3
-  BannerInterno(:subTitulo="'NOMBRE TEMA 3'")
+  BannerInterno(:subTitulo="'1. Introducción a la bioética en un contexto global'")
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5.overflow-hidden
-    #t_1_1.titulo-segundo
-      div.d-flex
-        span.me-3 1.1  
-        h2 Título de segundo
-    .row.justify-content-between.mb-5
-      .col-md-6.col-lg-7
-        p Desde los inicios de la humanidad, las reglas han sido un elemento fundamental para el desarrollo de las sociedades. El Derecho, en este contexto, se presenta como una herramienta indispensable para el buen funcionamiento de la convivencia. En esta primera unidad, se profundizará en el concepto de Derecho, su propósito y origen, así como en el proceso de creación de normas que regulan nuestras actividades diarias, las relaciones entre individuos y el Estado, y las normas que operan en el ámbito global.
-      .col-md-6.col-lg-5
-        //- .imagen-titulo--der debe ir acompañado de una de una de estas clases => 
-        //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
-        figure.mt-4.mt-lg-0
-          img(src='@/assets/componentes/banner-img-1.png', alt='Texto que describa la imagen')
-    #t_1_2.titulo-segundo.color-secundario
-      h2 1.2  Acordeón
-    .row.justify-content-between.mb-5
-      .col-md-6.col-lg-7
-        AcordionA(tipo="b")
-          .row(titulo="Titulo item 1")
-            .col
-              p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
 
-          div(titulo="Titulo item 2")
-            figure
-              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
-              figcaption Leyenda de la imagen
-      .col-md-6.col-lg-5.col-xl-4.mx-xl-auto
-        //- .imagen-titulo--der debe ir acompañado de una de una de estas clases => 
-        //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
-        figure
-          img(src='@/assets/componentes/banner-img-2.png', alt='Texto que describa la imagen')
-    #t_1_3.titulo-segundo.color-secundario.pb-5
-      h2 1.3  Slider
-    .row.position-relative.mb-5
-      img.bg-img-1(src='../../assets/componentes/background-test.svg', alt='Texto que describa la imagen')
-      SlyderA(tipo="b").bg-white
-        .row.p-4.p-md-5
-          .col-md-6.col-lg-7.mb-4.mb-md-0
-            p.text-bold Coercibilidad
-            p El derecho puede imponerse por la fuerza si es necesario. Cuando una persona incumple una norma jurídica, puede ser sancionada mediante multas, penas de prisión o la confiscación de bienes. Esta coercibilidad distingue al derecho de otros sistemas normativos que no cuentan con mecanismos de imposición obligatoria.
-        
-          .col-md-6.col-lg-5
-            figure
-              img(src='@/assets/componentes/banner-img-3.png', alt='Texto que describa la imagen')
-        .row.p-4.p-md-5
-          .col-md-6.mb-4.mb-md-0
-            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-        
-          .col-md-6
-            figure
-              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
-              figcaption Leyenda de la imagen
-        .row.p-4.p-md-5
-          .col-md-6.mb-4.mb-md-0
-            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-          .col-md-6
-            figure
-              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
-              figcaption Leyenda de la imagen
-    #t_1_4.titulo-segundo.color-secundario.pt-5
-      h2 1.4  Pestañas
     .row.mb-5
-      TabsC.color-primario
-        .tabs-content.border.px-4.p-md-5.py-3(titulo="The splendor of the mystery")
-          .row
-            .col-md-6.col-lg-7.col-xl-8.mb-4.mb-md-0
-              h4 Celebrate your failures 1
-              p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-          
-            .col-md-6.col-lg-5.col-xl-4
+      .col-lg-7
+        p(data-aos="fade-right") La bioética ha evolucionado como una disciplina multidimensional que combina ciencias, humanidades y principios éticos, ofreciendo respuestas a los dilemas que emergen en un mundo globalizado. En este contexto, el PDF La bioética en un contexto global, explora cómo la bioética se ha consolidado como un puente entre culturas y disciplinas, enfrentando desafíos éticos relacionados con la salud, la sostenibilidad y los derechos humanos. A través de un recorrido histórico que abarca desde los fundamentos del Juramento Hipocrático hasta los marcos éticos globales contemporáneos, se destaca su relevancia para los profesionales de hoy, quienes, independientemente de su campo, deben tomar decisiones que impactan profundamente en la vida humana y el medio ambiente. Este material busca proporcionar las bases necesarias para reflexionar sobre la importancia de la bioética en la construcción de un futuro más justo y sostenible.
+
+        a.anexo.mb-4.bg-white.w-fit(:href="obtenerLink('/downloads/Anexo_1.pdf')" target="_blank")(data-aos="flip-up")
+          .anexo__icono(:style="{'background-color': '#FCDFDB'}")
+            img(src="@/assets/template/icono-pdf.svg")
+          .anexo__texto
+            p <strong>Anexo. </strong> La bioética en un contexto global
+
+      .col-lg-5
+        figure
+          img(src="@/assets/curso/tema1/1.png", data-aos="zoom-in").mt-4.mt-lg-0
+
+    p(data-aos="fade-right") La historia y la evolución de la bioética, se pueden resumir en varios hitos claves:
+
+    .PurpleContainer.pt-5
+      .row.justify-content-center.align-items-center
+        .col-lg-8
+          h2.text-center.mb-5(data-aos="fade-right") La historia y la evolución de la bioética
+
+          ImagenInfografica.color-secundario.mb-5
+            template(v-slot:imagen)
               figure
-                img(src='@/assets/componentes/banner-img-4.png', alt='Texto que describa la imagen')
-        .tabs-content.border.px-4.p-md-5.py-3(titulo="Jerarquía normativa")
-          .row
-            .col-md-6.col-lg-7.col-xl-8.mb-4.mb-md-0
-              h4 Celebrate your failures 1
-              p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-          
-            .col-md-6.col-lg-5.col-xl-4
-              figure
-                img(src='@/assets/componentes/banner-img-4.png', alt='Texto que describa la imagen')
-        .tabs-content.border.px-4.p-md-5.py-3(titulo="Sentido amplio de la norma")
-          .row
-            .col-md-6.col-lg-7.col-xl-8.mb-4.mb-md-0
-              h4 Celebrate your failures 1
-              p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-          
-            .col-md-6.col-lg-5.col-xl-4
-              figure
-                img(src='@/assets/componentes/banner-img-4.png', alt='Texto que describa la imagen')
-    #t_1_5.titulo-segundo.color-secundario.pt-5
-      h2 1.5  Infografia interactiva
+                img(src='@/assets/curso/infografias/1.png', alt='', style="max-width: 583px;").mx-auto
+
+            .bg-color-3.p-3(x="50%" y="5%" numero="+")
+              h5 Orígenes filosóficos
+              p La bioética tiene raíces en la filosofía, la teología y el derecho. Estas disciplinas comenzaron a encarar cuestiones éticas relacionadas con la vida y la salud, estableciendo un marco para la discusión sobre la moralidad en la medicina y la investigación.
+
+            .bg-color-3.p-3(x="79.5%" y="27.5%" numero="+")
+              h5 Informe Belmont (1979)
+              p Este informe fue relacionado con la formalización de principios bioéticos en la investigación con seres humanos. Estableció criterios generales que guiarían la ética en la investigación, enfatizando la importancia de la justicia, la beneficencia, y el respeto por las personas.
+            
+            .bg-color-3.p-3(x="79.5%" y="72.5%" numero="+")
+              h5 Principios de bioética
+              p En 1979, Tom L. Beauchamp y James F. Childress publicaron "Principles of Biomedical Ethics", que se convirtió en un texto representativo en el campo. Este trabajo introdujo el "principalísimo", que se centra en cuatro principios éticos: autonomía, beneficencia, no maleficencia y justicia, y ha sido ampliamente adoptado por profesionales de la salud y comités de ética.
+
+            .bg-color-3.p-3(x="50%" y="95%" numero="+")
+              h5 Bioética global
+              p Van Rensselaer Potter, en 1971, propuso la bioética como una disciplina que integra biología, ecología, medicina y valores humanos. Su enfoque enfatizaba la necesidad de considerar las implicaciones éticas de la investigación científica, en el contexto del medio ambiente, lo que llevó a la noción de "bioética global".
+
+            .bg-color-3.p-3(x="20%" y="72.5%" numero="+")
+              h5 Desarrollo de comités de ética
+              p A partir de los años 80, se establecieron comités de ética en hospitales y organizaciones de investigación, para evaluar proyectos y prácticas en salud, asegurando que se cumplieran los principios bioéticos en la atención médica y la investigación.
+
+            .bg-color-3.p-3(x="20.2%" y="27.5%" numero="+")
+              h5 Diversidad de enfoques
+              p La bioética ha evolucionado para incluir diversas perspectivas, como la bioética secular y la bioética moral, reflejando la pluralidad de valores y creencias, en sociedades democráticas y multiculturales.
+
+    .SplitContainer2.mb-5
+      .row.justify-content-center  
+        .col-lg-9
+          .bg-color-1.shadow-soft.py-4.px-lg-5(data-aos="fade-up")
+            p(data-aos="fade-right").mb-0 En resumen, la bioética ha pasado de ser un campo emergente en la filosofía y la ética médica, para convertirse en una disciplina integral que aborda los desafíos éticos contemporáneos en la medicina y la investigación, adaptándose a los cambios sociales y tecnológicos, a lo largo del tiempo. 
       
-    .row.mb-5.justify-content-center.img-infografica.p-md-5
-      .col-12.col-md-9
-        ImagenInfografica.color-secundario
-          template(v-slot:imagen)
-            figure
-              img(src='@/assets/componentes/test-img-infogr.svg', alt='Texto que describa la imagen')
-
-          .tarjeta.color-acento-botones.p-3(x="9%" y="19%" numero="+")
-            .h5.mb-2 titulo
-            p Lorem ipsum dolor Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus
-
-          .tarjeta.color-acento-botones.p-3(x="91%" y="81%" numero="+")
-            .h5.mb-2 titulo
-            p Lorem ipsum dolor ddasdasd asdasd asdasd a asd sd asdasd sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus
-
-          .tarjeta.color-acento-botones.p-3(x="91%" y="19%" numero="+")
-            .h5.mb-2 titulo
-            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus
-
-          .tarjeta.color-acento-botones.p-3(x="9%" y="81%" numero="+")
-            .h5.mb-2 titulo
-            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus
-    
-    #t_1_6.titulo-segundo
-      div.d-flex
-        span.me-3 1.6  
-        h2 Linea de tiempo D
-
-    LineaTiempoD.color-secundario.mb-5
-      p(numero="1" titulo="Praesent luctus") Lorem ipsum dolor sit amet, 
-      p(numero="2" titulo="Praesent luctus") Lorem ipsum dolor sit amet, 
-      p(numero="3" titulo="Praesent luctus") Lorem ipsum dolor sit amet, 
-    
-    #t_1_7.titulo-segundo
-      div.d-flex
-        span.me-3 1.7
-        h2 Tarjeta de audio
-    
-      TarjetaAudio.color-primario.bg-white.mb-5(
-        texto="Proceso de descarga de MySQL Server Community y MySQL Workbench"
-        tiempo
-        :audio="require('../../assets/componentes/audios/audio-ej.mp3')"
-        @audio-hover="mostrarIndicadorTarjetaAudio = false"
-      )
-
-    .bg-full-width.border-top-9-azul
-      .px-4.p-md-5
-        h2 Material complementario
-        .row
-          .col-12.col-md-6.col-lg-8
-            p.text-small
-            p.d-flex.my-4
-              img.me-3.mb-auto.mt-2(src='@/assets/componentes/youtube-icon.svg' :style="{'max-width':'16px'}")
-              span.text-small
-            p.d-flex.my-4
-              img.me-3.mb-auto.mt-2(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              span.text-small
-            p.d-flex.my-4
-              img.me-3.mb-auto.mt-2(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              span.text-small
-          .col-12.col-md-6.col-lg-3
-            figure
-              img(src='@/assets/componentes/material-complementario.svg', alt='Texto que describa la imagen')
 </template>
 
 <script>
@@ -177,4 +79,23 @@ export default {
   background-color: $color-sistema-h
 .img-infografica
   background-color: $color-adicional-1
+
+.SplitContainer
+  background: rgb(85,122,250)
+  background: linear-gradient(0deg, rgba(232,238,253,1) 0%, rgba(232,238,253,1) 50%, rgba(255,255,255,1) 50%)
+
+  .yellowCard
+    padding: 2rem
+    background-color: #FBF6DB
+
+.PurpleContainer
+  background-color: rgb(255,253,246)
+
+.SplitContainer2
+  background: rgb(85,122,250)
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,253,246,1) 50%)
+
+  .yellowCard
+    padding: 2rem
+    background-color: #FBF6DB
 </style>

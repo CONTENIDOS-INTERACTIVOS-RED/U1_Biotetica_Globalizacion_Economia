@@ -2,9 +2,11 @@
 .curso-main-container.creditos-vista
   BannerInterno(subTitulo="SÍNTESIS")
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
-    p.mb-4.mb-md-5 La unidad I:  Introducción al derecho y sus fuentes, establece los fundamentos teóricos esenciales para comprender el origen de las normas jurídicas y su aplicación. 
-    figure
-      img(src='@/assets/componentes/sintesis-test.png', alt='Texto que describa la imagen')
+    p(data-aos="fade-up").mb-5 La Unidad 1: Fundamentos de la bioética en el contexto global, introduce los principios esenciales de la bioética y su relevancia en un mundo interconectado. Esta unidad explora conceptos clave como la justicia, la autonomía, la beneficencia y la no maleficencia, enmarcados en el impacto de la globalización, los dilemas éticos contemporáneos y su relación con la sostenibilidad, la equidad social y los derechos humanos. Proporciona una base teórica sólida para reflexionar sobre los desafíos éticos que surgen de los avances científicos, tecnológicos y económicos, promoviendo una comprensión integral que capacite a los estudiantes para aplicar estos principios en su práctica profesional y en la construcción de un futuro ético y sostenible.
+    .row.justify-content-center
+      .col-lg-12.mb-5
+        figure.bg-color-sintesis.p-5.brounded
+          img(src='@/assets/curso/sintesis/sintesis.svg', alt='')
     
 
 </template>
